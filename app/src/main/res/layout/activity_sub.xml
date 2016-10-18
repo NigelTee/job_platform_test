@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="materialtest.example.user.materialtest.activity.SubActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:id="@+id/tv_ID"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first"
+         />
+
+    <TextView
+        android:id="@+id/tv_Genus"
+        android:layout_below="@+id/tv_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second"
+         />
+
+    <TextView
+        android:id="@+id/tv_Species"
+        android:layout_below="@+id/tv_Genus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third"
+         />
+
+</RelativeLayout>

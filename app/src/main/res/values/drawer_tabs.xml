@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_tab">
+        <item>Home</item>
+        <item>Saved Jobs</item>
+        <item>Applied Jobs</item>
+        <item>Account</item>
+        <item>Logout</item>
+    </string-array>
+
+</resources>

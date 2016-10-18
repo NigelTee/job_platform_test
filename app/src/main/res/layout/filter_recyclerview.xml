@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="materialtest.example.user.materialtest.activity.FilterActivity"
+    android:id="@+id/filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_filter"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="216dp" />
+
+    <RelativeLayout
+        android:id="@+id/sb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/rv_filter"
+        android:background="@drawable/custom_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_seekbar_Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_info_grey600_24dp"
+            android:contentDescription="@string/seekbar_logo" />
+
+        <TextView
+            android:id="@+id/tv_salary_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="72dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="0dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/desc"
+            android:text="@string/select_min_salary"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sb_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="72dp"
+            android:paddingRight="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/tv_salary_amount"
+            android:layout_toStartOf="@+id/tv_salary_amount"
+            android:layout_below="@+id/tv_salary_desc"
+            android:max="1000" />
+
+        <TextView
+            android:id="@+id/tv_salary_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:layout_below="@+id/tv_salary_desc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/desc"
+            android:text="@string/min_salary"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"
+            android:layout_alignParentBottom="true">
+
+        </View>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="transfer"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp"
+        android:text="@string/Update"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bReset"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="reset"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp"
+        android:text="@string/Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/bUpdate"
+        android:layout_toStartOf="@+id/bUpdate"/>
+
+</RelativeLayout>

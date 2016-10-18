@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@mipmap/gradlib"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <EditText
+        android:id="@+id/usernamelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignLeft="@+id/passwordlogin"
+        android:layout_alignStart="@+id/passwordlogin"
+        android:layout_marginTop="43dp"
+        android:ems="13"
+        android:hint="Email"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernamelogin"
+        android:layout_centerHorizontal="true"
+        android:ems="13"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true">
+    </EditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordlogin"
+        android:layout_alignLeft="@+id/passwordlogin"
+        android:layout_alignRight="@+id/passwordlogin"
+        android:text="LOG IN"
+        />
+
+    <TextView
+        android:id="@+id/regtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up for GradLib"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

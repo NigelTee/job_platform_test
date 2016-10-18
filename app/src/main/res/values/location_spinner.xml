@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location_prompt">Choose a Location</string>
+    <string-array name="location">
+        <item>Redbud</item>
+        <item>Pawpaw</item>
+        <item>Rose</item>
+    </string-array>
+</resources>

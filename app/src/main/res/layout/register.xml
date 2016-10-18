@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp" />
+
+    <EditText
+        android:id="@+id/usernameregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="43dp"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:hint="Username"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/emailregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameregister"
+        android:layout_below="@+id/usernameregister"
+        android:ems="15"
+        android:hint="Email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/passwordregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailregister"
+        android:layout_alignLeft="@+id/usernameregister"
+        android:ems="15"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/emailregister"
+        android:layout_alignLeft="@+id/emailregister"
+        android:layout_below="@+id/passwordregister"
+        android:text="Register" />
+
+</RelativeLayout>

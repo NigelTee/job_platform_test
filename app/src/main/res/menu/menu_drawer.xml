@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@mipmap/ic_place_grey600_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@mipmap/ic_place_grey600_24dp"
+            android:title="@string/savedJobs" />
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@mipmap/ic_place_grey600_24dp"
+            android:title="@string/appliedJobs" />
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@mipmap/ic_place_grey600_24dp"
+            android:title="@string/account" />
+    </group>
+
+    <item
+        android:id="@+id/navigation_subtitle2"
+        android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_5"
+                android:icon="@mipmap/ic_place_grey600_24dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>
